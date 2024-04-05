@@ -22,14 +22,30 @@
                 <div class="logo">
                     <img src="./images/icon.png" width="64" height="64">
                 </div>
-                <div class="vertical-line"></div>
+                <div class="vertical-line">
+                    <img src="./images/line.svg"/>
+                </div>
                 <div class="virtual-servers">
                     <a href="#">Виртуальные сервера</a>
                     <img src="./images/arrow.svg" width="10" height="10">
                 </div>
+                <div class="dedicated-servers">
+                    <a href="#">Выделенные сервера</a>
+                </div>
+                <div class="cloud-hosting">
+                    <a href="#">Облачный хостинг</a>
+                </div>
+                <div class="web-hosting">
+                    <a href="#">Веб-хостинг</a>
+                </div>
             </div>
             <div class="header-account">
-
+                <div class="login">
+                    <a href="#">Вход</a>
+                </div>
+                <button class="register">
+                    <a href="#">Регистрация</a>
+                </button>
             </div>
         </header>
     </div>
