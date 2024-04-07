@@ -9,19 +9,37 @@
     --h3: 26px;
     --p: 18px;
     --small: 16px;
+    --vertical-gap: 205px;
+}
+section, header {
+    margin-bottom: var(--vertical-gap);
+}
+h1 {
+    color: var(--black);
+    font-size: var(--h1);
+}
+h2 {
+    color: var(--black);
+    font-size: var(--h2);
+}
+h3 {
+    color: var(--black);
+    font-size: var(--h3);
+}
+small {
+    font-size: var(--small);
+    font-weight: 400;
+}
+button {
+    border-radius: 5px;
+    padding: 11px 15px;
+}
+button a {
+    font-weight: var(--bold);
 }
 a, a:link {
     color: var(--black);
     font-size: var(--p);
-}
-button {
-    border-radius: 5px;
-    padding: 12px;
-}
-button a {
-    color: var(--white);
-    font-size: var(--p);
-    font-weight: var(--bold);
 }
 body {
     font-family: "Rubik", sans-serif;
@@ -32,6 +50,7 @@ body {
     width: 1620px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     margin: 30px auto 60px;
 }
 header {
@@ -45,7 +64,7 @@ header {
     justify-content: space-between;
     align-items: center;
     flex: 1;
-    max-width: 980px;
+    max-width: 1010px;
 }
 .virtual-servers {
     display: flex;
@@ -60,11 +79,63 @@ header {
     justify-content: center;
 }
 .login {
-    margin-right: 45px;
+    margin-right: 50px;
 }
 .register {
     background-color: var(--orange);
 }
 .register a {
+    color: var(--white);
+}
+.cloud-block, .tarif-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: inherit;
+}
+.cloud-title, .tarif-title {
+    margin-bottom: 50px;
+}
+.cloud-button button {
+    padding: 16px 15px;
+    background-color: var(--orange);
+}
+.cloud-button a {
+    color: var(--white);
+}
+.tarif-content {
+    width: inherit;
+}
+.tarif-title {
+    margin-bottom: 40px;
+}
+.tarif-text {
+    margin-bottom: 30px;
+}
+.tarif {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.tarif-list {
+    display: flex;
+    justify-content: space-between;
+}
+.tarif-prices {
+    width: 450px;
+}
+.tarif-item, .tarif-config {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tarif-config {
+    gap: 10px;
+    font-weight: 400;
+}
+.tarif-button button{
+    background-color: var(--dark-gray);
+}
+.tarif-button button a {
     color: var(--white);
 }
