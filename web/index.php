@@ -26,9 +26,28 @@
                 <div class="vertical-line">
                     <img src="./images/line.svg" />
                 </div>
-                <div class="virtual-servers">
-                    <a>Виртуальные сервера</a>
-                    <img src="./images/arrow.svg" width="10" height="10">
+                <div class="virtual-servers-menu">
+                    <div class="virtual-servers">
+                        <a>Виртуальные сервера</a>
+                        <img src="./images/arrow.svg" width="10" height="10">
+                    </div>
+                    <div class="burger-menu">
+                        <div class="menu-content">
+                            <div class="shared" id="shared">
+                                <p>Shared</p>
+                                <small>Сбалансированная цена и качество</small>
+                            </div>
+                            <div class="vps" id="vps">
+                                <p>VPS</p>
+                                <small>Современные процессоры</small>
+                            </div>
+                            <div class="vds" id="vds">
+                                <p>VDS</p>
+                                <small>Максимальная производительность</small>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="dedicated-servers">
                     <a href="#">Выделенные сервера</a>
@@ -62,7 +81,7 @@
                 <img src="images/cloud.png">
             </div>
         </section>
-        <section class="tarif-block">
+        <section class="tarif-block" id="tarif">
             <div class="tarif-content">
                 <div class="tarif-title">
                     <h2>Тарифы</h2>
@@ -349,5 +368,6 @@
             </div>
         </footer>
     </div>
+    <script type="text/javascript" src="menuScroller.js"></script>
 </body>
 </html>

@@ -44,6 +44,7 @@ a, a:link {
 body {
     font-family: "Rubik", sans-serif;
     font-weight: var(--bold);
+    color: var(--black);
 }
 .body-wrapper {
     display: flex;
@@ -70,8 +71,29 @@ header {
     display: flex;
     align-items: center;
 }
+.virtual-servers-menu:hover .burger-menu {
+    display: block;
+}
 .virtual-servers img {
     margin-left: 10px;
+}
+.burger-menu {
+    display: none;
+    position: absolute;
+    padding-top: 40px;
+    transition: ease-in-out 2s;
+}
+.menu-content {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    font-size: var(--p);
+}
+.shared, .vps, .vds {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    cursor: pointer;
 }
 .header-account {
     display: flex;
@@ -132,6 +154,9 @@ header {
 }
 .tarif-button button{
     background-color: var(--dark-gray);
+}
+.support-description {
+    gap:40px;
 }
 .support-description button {
     background-color: var(--orange);
