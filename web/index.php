@@ -4,15 +4,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="shortcut icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <title>Главная</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
                     <img src="./images/icon.svg" width="64" height="64">
                 </div>
                 <div class="vertical-line">
-                    <img src="./images/line.svg"/>
+                    <img src="./images/line.svg" />
                 </div>
                 <div class="virtual-servers">
                     <a>Виртуальные сервера</a>
@@ -262,6 +263,91 @@
                 </div>
             </div>
         </section>
+        <section class="support-block">
+            <div class="support-content">
+                <div class="support-title">
+                    <h2>Остались вопросы?</h2>
+                </div>
+                <div class="support-list">
+                    <div class="support-item">
+                        <div class="support-description">
+                            <h3>Служба поддержки 24/7</h3>
+                            <small>Получайте круглосуточную поддержку<br>от дружелюбных агентов Службы поддержки</small>
+                            <div>
+                                <button><a>Открыть чат</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="support-item">
+                        <div class="support-description">
+                            <h3>FAQ</h3>
+                            <small>Множество FAQ с подробными объяснениями<br>различных вопросов</small>
+                            <div>
+                                <button><a>Подробнее</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="support-item">
+                        <div class="support-description">
+                            <h3>Всё о хостинге</h3>
+                            <small>Огромная база руководств<br>для новичков и профессионалов</small>
+                            <div>
+                                <button><a>Ознакомиться</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-list">
+                <div class="footer-item">
+                    <p>Информация</p>
+                    <div class="footer-menu">
+                        <small>Реферальная программа</small>
+                        <small>Личный кабинет</small>
+                        <small>О дата-центрах</small>
+                        <small>Контакты</small>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <p>Продукты</p>
+                    <div class="footer-menu">
+                        <small>Виртуальные сервера</small>
+                        <small>Выделенные сервера</small>
+                        <small>Облачный хостинг</small>
+                        <small>Веб-хостинг</small>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <p>Услуги</p>
+                    <div class="footer-menu">
+                        <small>Доменные имена</small>
+                        <small>Балансировщики</small>
+                        <small>Защита от DDoS</small>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <p>Техподдержка</p>
+                    <div class="footer-menu">
+                        <small>Обратиться в поддержку</small>
+                        <small>Документация</small>
+                        <small>FAQ</small>
+                    </div>
+                </div>
+                <div class="footer-item">
+                    <p>Социальные сети</p>
+                    <div class="footer-menu">
+                        <div class="socials">
+                            <img src="images/vk.svg">
+                            <img src="images/tg.svg">
+                            <img src="images/whatsapp.svg">
+                            <img src="images/youtube.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

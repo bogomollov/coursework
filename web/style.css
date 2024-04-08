@@ -87,37 +87,34 @@ header {
 .register a {
     color: var(--white);
 }
-.cloud-block, .tarif-block {
+.cloud-block, .tarif-block, .support-block {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: inherit;
 }
-.cloud-title, .tarif-title {
+.cloud-title, .tarif-title, .support-title {
     margin-bottom: 50px;
 }
 .cloud-button button {
     padding: 16px 15px;
     background-color: var(--orange);
 }
-.cloud-button a {
+.cloud-button a, .tarif-button button a, .support-description button a {
     color: var(--white);
 }
-.tarif-content {
+.tarif-content, .support-content {
     width: inherit;
-}
-.tarif-title {
-    margin-bottom: 40px;
 }
 .tarif-text {
     margin-bottom: 30px;
 }
-.tarif {
+.tarif, .support-description {
     display: flex;
     gap: 20px;
     flex-direction: column;
 }
-.tarif-list {
+.tarif-list, .support-list {
     display: flex;
     justify-content: space-between;
 }
@@ -136,6 +133,30 @@ header {
 .tarif-button button{
     background-color: var(--dark-gray);
 }
-.tarif-button button a {
-    color: var(--white);
+.support-description button {
+    background-color: var(--orange);
+}
+footer {
+    display: flex;
+    width: inherit;
+}
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: inherit;
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.socials {
+    display: flex;
+    gap: 16px;
 }
