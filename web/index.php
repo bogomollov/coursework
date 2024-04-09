@@ -10,10 +10,9 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css?v=3.4.2">
     <title>Главная</title>
 </head>
 <body>
@@ -50,13 +49,13 @@
                     </div>
                 </div>
                 <div class="dedicated-servers">
-                    <a href="#">Выделенные сервера</a>
+                    <a id="dedicated">Выделенные сервера</a>
                 </div>
                 <div class="cloud-hosting">
-                    <a href="#">Облачный хостинг</a>
+                    <a id="cloud">Облачный хостинг</a>
                 </div>
                 <div class="web-hosting">
-                    <a href="#">Веб-хостинг</a>
+                    <a id="web">Веб-хостинг</a>
                 </div>
             </div>
             <div class="header-account">
@@ -84,7 +83,7 @@
         <section class="tarif-block" id="tarif">
             <div class="tarif-content">
                 <div class="tarif-title">
-                    <h2>Тарифы</h2>
+                    <h2>Виртуальные сервера</h2>
                 </div>
                 <div class="tarif-list">
                     <div class="tarif-shared">
@@ -282,6 +281,143 @@
                 </div>
             </div>
         </section>
+        <section class="dedicated-block" id="tarif2">
+            <div class="dedicated-content">
+                <div class="dedicated-title">
+                    <h2>Выделенные сервера</h2>
+                </div>
+                <div class="dedicated-list">
+                    <div class="xeon">
+                        <div class="list-item">
+                            <div class="e3">
+                                <div class="xeon-title">
+                                    <h3>E3-1240</h3>
+                                    <small>Intel Xeon E3-1240</small>
+                                </div>
+                                <div class="tarif-dedicated">
+                                    <div>4 Cores, 3.4-4.8 GHz</div>
+                                    <div>8 GB DDR3</div>
+                                    <div>2 x 480 GB HDD</div>
+                                    <button><a href="#">4940₽/мес</a></button>
+                                </div>
+                            </div>
+                            <div class="e3">
+                                <div class="xeon-title">
+                                    <h3>E3-1286v3</h3>
+                                    <small>Intel Xeon E3-1286v3</small>
+                                </div>
+                                <div class="tarif-dedicated">
+                                    <div>4 Cores, 3.7-4.1 GHz</div>
+                                    <div>16 GB DDR3</div>
+                                    <div>2 x 480 GB HDD</div>
+                                    <button><a href="#">6200₽/мес</a></button>
+                                </div>
+                            </div>
+                            <div class="e3">
+                                <div class="xeon-title">
+                                    <h3>E3-2236</h3>
+                                    <small>Intel Xeon E3-2236</small>
+                                </div>
+                                <div class="tarif-dedicated">
+                                    <div>6 Cores, 3.6-4.0 GHz</div>
+                                    <div>32 GB DDR4</div>
+                                    <div>2 x 480 GB HDD</div>
+                                    <button><a href="#">7650₽/мес</a></button>
+                                </div>
+                            </div>
+                            <div class="e3">
+                                <div class="xeon-title">
+                                    <h3>E5-2620</h3>
+                                    <small>Intel Xeon E5-2620</small>
+                                </div>
+                                <div class="tarif-dedicated">
+                                    <div>12 Cores, 2.4-3.2 GHz</div>
+                                    <div>32 GB DDR4</div>
+                                    <div>2 x 480 GB HDD</div>
+                                    <button><a href="#">8900₽/мес</a></button>
+                                </div>
+                            </div>
+                            <div class="e3">
+                                <div class="xeon-title">
+                                    <h3>E5-2678v3</h3>
+                                    <small>Intel Xeon E5-2678v3</small>
+                                </div>
+                                <div class="tarif-dedicated">
+                                    <div>24 Cores, 2.5-3.3 GHz</div>
+                                    <div>64 GB DDR4</div>
+                                    <div>2 x 1 TB SDD</div>
+                                    <button><a href="#">10700₽/мес</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intel core">
+                        <div class="list-item">
+                            <div class="i9">
+                                <div class="intel-title">
+                                    <h3>I9-9900</h3>
+                                    <small>Intel Core i9-9900</small>
+                                </div>
+                                <div class="tarif-dedicated">
+                                    <div>8 Cores, 3.6-5.0 GHz</div>
+                                    <div>8 GB DDR5</div>
+                                    <div>2 x 1 TB SDD</div>
+                                    <button><a href="#">11600₽/мес</a></button>
+                                </div>
+                            </div>
+                            <div class="i9">
+                                <div class="intel-title">
+                                    <h3>I9-9900K</h3>
+                                    <small>Intel Core i9-9900K</small>
+                                </div>
+                                <div class="tarif-dedicated">
+                                    <div>8 Cores, 3.0-5.8 GHz</div>
+                                    <div>16 GB DDR5</div>
+                                    <div>2 x 1 TB SDD</div>
+                                    <button><a href="#">12900₽/мес</a></button>
+                                </div>
+                            </div>
+                            <div class="i9">
+                                <div class="intel-title">
+                                    <h3>I5-14600KF</h3>
+                                    <small>Intel Core i5-14600KF</small>
+                                </div>
+                                <div class="tarif-dedicated">
+                                    <div>14 Cores, 3.5-5.3 GHz</div>
+                                    <div>32 GB DDR5</div>
+                                    <div>2 x 1 TB SDD</div>
+                                    <button><a href="#">14490₽/мес</a></button>
+                                </div>
+                            </div>
+                            <div class="i9">
+                                <div class="intel-title">
+                                    <h3>I9-13900K</h3>
+                                    <small>Intel Core i9-13900K</small>
+                                </div>
+                                <div class="tarif-dedicated">
+                                    <div>24 Cores, 3.0-5.8 GHz</div>
+                                    <div>64 GB DDR5</div>
+                                    <div>2 x 1 TB SDD</div>
+                                    <button><a href="#">16490₽/мес</a></button>
+                                </div>
+                            </div>
+                            <div class="i9">
+                                <div class="intel-title">
+                                    <h3>I9-14900K</h3>
+                                    <small>Intel Core i9-14900K</small>
+                                </div>
+                                <div class="tarif-dedicated">
+                                    <div>24 Cores, 3.2-6.0 GHz</div>
+                                    <div>128 GB DDR5</div>
+                                    <div>2 x 1 TB SDD</div>
+                                    <button><a href="#">19900₽/мес</a></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="support-block">
             <div class="support-content">
                 <div class="support-title">
@@ -321,7 +457,7 @@
         <footer>
             <div class="footer-list">
                 <div class="footer-item">
-                    <p>Информация</p>
+                    <a>Информация</a>
                     <div class="footer-menu">
                         <small>Реферальная программа</small>
                         <small>Личный кабинет</small>
@@ -330,7 +466,7 @@
                     </div>
                 </div>
                 <div class="footer-item">
-                    <p>Продукты</p>
+                    <a>Продукты</a>
                     <div class="footer-menu">
                         <small>Виртуальные сервера</small>
                         <small>Выделенные сервера</small>
@@ -339,7 +475,7 @@
                     </div>
                 </div>
                 <div class="footer-item">
-                    <p>Услуги</p>
+                    <a>Услуги</a>
                     <div class="footer-menu">
                         <small>Доменные имена</small>
                         <small>Балансировщики</small>
@@ -347,7 +483,7 @@
                     </div>
                 </div>
                 <div class="footer-item">
-                    <p>Техподдержка</p>
+                    <a>Техподдержка</a>
                     <div class="footer-menu">
                         <small>Обратиться в поддержку</small>
                         <small>Документация</small>
@@ -355,19 +491,19 @@
                     </div>
                 </div>
                 <div class="footer-item">
-                    <p>Социальные сети</p>
+                    <a>Социальные сети</a>
                     <div class="footer-menu">
                         <div class="socials">
-                            <img src="images/vk.svg">
-                            <img src="images/tg.svg">
-                            <img src="images/whatsapp.svg">
-                            <img src="images/youtube.svg">
+                            <a href="#"><img src="images/vk.svg"></a>
+                            <a href="#"><img src="images/tg.svg"></a>
+                            <a href="#"><img src="images/whatsapp.svg"></a>
+                            <a href="#"><img src="images/youtube.svg"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </footer>
     </div>
-    <script type="text/javascript" src="menuScroller.js"></script>
+    <script type="text/javascript" src="menuScroller.js?v=3.4.2"></script>
 </body>
 </html>

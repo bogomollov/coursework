@@ -89,6 +89,9 @@ header {
     flex-direction: column;
     font-size: var(--p);
 }
+.virtual-servers, #dedicated, #web, #cloud {
+    cursor: pointer;
+}
 .shared, .vps, .vds {
     display: flex;
     flex-direction: column;
@@ -109,13 +112,13 @@ header {
 .register a {
     color: var(--white);
 }
-.cloud-block, .tarif-block, .support-block {
+.cloud-block, .tarif-block, .dedicated-block, .support-block {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: inherit;
 }
-.cloud-title, .tarif-title, .support-title {
+.cloud-title, .tarif-title, .dedicated-title, .support-title {
     margin-bottom: 50px;
 }
 .cloud-button button {
@@ -125,7 +128,7 @@ header {
 .cloud-button a, .tarif-button button a, .support-description button a {
     color: var(--white);
 }
-.tarif-content, .support-content {
+.tarif-content, .dedicated-content, .list-item, .support-content {
     width: inherit;
 }
 .tarif-text {
@@ -152,10 +155,48 @@ header {
     gap: 10px;
     font-weight: 400;
 }
+.list-item {
+    display: flex;
+    justify-content: space-between;
+}
+.dedicated-list {
+    gap: 70px;
+}
+.e3, .i9 {
+    display: flex;
+    gap: 30px;
+}
+.tarif-xeon, .tarif-intel {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    font-weight: 400;
+    align-items: flex-start;
+}
+.dedicated-list, .e3, .xeon-title, .i9, .intel-title {
+    display: flex;
+    flex-direction: column;
+}
+.tarif-dedicated {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    gap: 16px;
+}
+.tarif-dedicated button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-gray);
+    margin-top: 40px;
+}
+.tarif-dedicated button a{
+    color: var(--white);
+}
 .tarif-button button{
     background-color: var(--dark-gray);
 }
-.support-description {
+.xeon-title, .intel-title, .support-description {
     gap:40px;
 }
 .support-description button {
