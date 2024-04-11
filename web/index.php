@@ -1,6 +1,7 @@
 <?php
     include("db.php");
     include("auth.php");
+    ini_set('display_errors', 0);
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -21,7 +22,7 @@
         <header>
             <div class="header-menu">
                 <div class="logo">
-                    <img src="./images/icon.svg" width="64" height="64">
+                    <a href="index.php"><img src="./images/icon.svg" width="64" height="64"></a>
                 </div>
                 <div class="vertical-line">
                     <img src="./images/line.svg" />
@@ -60,11 +61,11 @@
                 </div>
             </div>
             <div class="header-account">
-                <div class="login">
-                    <a href="#">Вход</a>
+                <div class="login" id='login'>
+                    <a>Вход</a>
                 </div>
-                <button class="register">
-                    <a href="#">Регистрация</a>
+                <button class="register" id='register'>
+                    <a>Регистрация</a>
                 </button>
             </div>
         </header>
@@ -506,5 +507,6 @@
         </footer>
     </div>
     <script type="text/javascript" src="menuScroller.js?v=3.4.2"></script>
+    <script type="text/javascript" src="popup.js?v=3.4.2"></script>
 </body>
 </html>

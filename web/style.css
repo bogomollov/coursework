@@ -30,11 +30,11 @@ small {
     font-size: var(--small);
     font-weight: 400;
 }
-button {
+button, input[type=submit] {
     border-radius: 5px;
     padding: 11px 15px;
 }
-button a {
+button a, input[type=submit] {
     font-weight: var(--bold);
 }
 a, a:link {
