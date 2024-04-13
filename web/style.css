@@ -108,6 +108,8 @@ header {
 }
 .register {
     background-color: var(--orange);
+    color: var(--white);
+    font-weight: 500;
 }
 .register a {
     color: var(--white);
