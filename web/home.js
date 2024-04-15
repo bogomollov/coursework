@@ -18,4 +18,8 @@ arr.forEach(element => {
 
 dedicated.addEventListener("click", (e) => {
     tarifblock2.scrollIntoView()
-})
+});
+
+function showUserProfile() {
+    
+}

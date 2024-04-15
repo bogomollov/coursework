@@ -1,22 +1,41 @@
 <?php
+    session_start();
     include('db.php');
 
     $username = $_POST["username"];
     $password = $_POST["password"];
 
-    $valid = $db->prepare("SELECT * FROM `Users` WHERE `username` = :username");
+    $valid = $db->prepare("SELECT * FROM Users WHERE username=:username");
     $valid->execute(['username' => $username]);
     $rows = $valid->fetchAll(PDO::FETCH_ASSOC);
-    foreach ($rows as $key => $row) {
-        if (!isset($row['username'])) {
-            $insert = $db->prepare("INSERT INTO `Users` (`username`, `password`) VALUES (:user, :pass)");
-            $insert->execute([':user' => $username, ':pass' => $password]);
+
+    if (isset($_POST['register'])) {      
+        foreach ($rows as $key => $row) {
+            if ($valid->rowCount() > 0) {
+                header("Location: popup.php");
+                exit();
+            }
+            if ($valid->rowCount() == 0 or $valid->rowCount() == null) {
+                $insert = $db->prepare("INSERT INTO Users (username, password) VALUES (:username, :password)");
+                $insert->execute(['username' => $username, 'password' => $password]);
+                $_SESSION['id'] = $row['id'];
+                setcookie("username", $username);
+                header("Location: /");
+                exit();
+            }
         }
-        elseif ($row['username'] && $row['password'] == $username && $password) {
-            $_SESSION['id'] = $row['id'];
-            setcookie("username", $username);
-            header("Location: /");
-            exit();
+    }
+    if (isset($_POST['login'])) {
+        foreach ($rows as $key => $row) {
+            if ($row['password'] != $password) {
+                header("Location: popup.php");
+                exit();
+            }
+            if ($row['username'] == $username && $row['password'] == $password) {
+                $_SESSION['id'] = $row['id'];
+                setcookie("username", $username);
+                header("Location: /");
+                exit();
+            }
         }
-        else echo "Неправильный пароль";
     }

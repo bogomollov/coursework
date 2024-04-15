@@ -1,5 +1,9 @@
 <?php
+    session_start();
     include("db.php");
+    // if (!isset($_SESSION['id'])) {
+
+    // }
 ?>
 <!DOCTYPE html>
 <html lang="ru">

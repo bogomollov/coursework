@@ -8,5 +8,6 @@ select.addEventListener("click", (e) => {
     select.innerHTML =
     (select.innerHTML == 'Войти в аккаунт' ? select.innerHTML = 'Регистрация' : select.innerHTML = 'Войти в аккаунт');
     submit.innerHTML =
-    (submit.value == 'Зарегистрироваться' ? submit.value = 'Войти в аккаунт' : submit.value = 'Зарегистрироваться');
+    (submit.value == 'Зарегистрироваться' ? submit.value = 'Войти в аккаунт' : submit.value = 'Зарегистрироваться'),
+    (submit.name == 'register' ? submit.name = 'login' : submit.name = 'register');
 });

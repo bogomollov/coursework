@@ -1,3 +1,6 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -24,7 +27,7 @@
                         <h3>Пароль</h3>
                         <input type="password" name="password" maxlength="16" required>
                     </div>
-                    <input type="submit" value="Зарегистрироваться" id="submit">
+                    <input type="submit" name="register" value="Зарегистрироваться" id="submit">
                 </form>
                 <div class="login-content">
                 <h3 id="login-title">Уже есть учетная запись?</h3>
