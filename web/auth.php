@@ -15,14 +15,14 @@
                 header("Location: popup.php");
                 exit();
             }
-            if ($valid->rowCount() == 0 or $valid->rowCount() == null) {
-                $insert = $db->prepare("INSERT INTO Users (username, password) VALUES (:username, :password)");
-                $insert->execute(['username' => $username, 'password' => $password]);
-                $_SESSION['id'] = $row['id'];
-                setcookie("username", $username);
-                header("Location: /");
-                exit();
-            }
+        }
+        if ($valid->rowCount() == 0) {
+            $insert = $db->prepare("INSERT INTO Users (username, password) VALUES (:username, :password)");
+            $insert->execute(['username' => $username, 'password' => $password]);
+            $_SESSION['id'] = $username;
+            setcookie("username", $username);
+            header("Location: /");
+            exit();
         }
     }
     if (isset($_POST['login'])) {

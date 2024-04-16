@@ -114,6 +114,9 @@ header {
 .register a {
     color: var(--white);
 }
+#account {
+    margin-right: 45px;
+}
 .cloud-block, .tarif-block, .dedicated-block, .support-block {
     display: flex;
     align-items: center;

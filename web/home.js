@@ -6,6 +6,8 @@ const dedicated = document.getElementById("dedicated");
 const cloud = document.getElementById("cloud");
 const web = document.getElementById("web");
 
+const register = document.getElementById("register");
+
 const tarifblock = document.getElementById("tarif");
 const tarifblock2 = document.getElementById("tarif2");
 
@@ -20,6 +22,6 @@ dedicated.addEventListener("click", (e) => {
     tarifblock2.scrollIntoView()
 });
 
-function showUserProfile() {
-    
-}
+register.addEventListener("click", (e) => {
+    window.location.href="popup.php";
+});

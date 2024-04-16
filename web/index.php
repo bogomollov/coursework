@@ -1,9 +1,6 @@
 <?php
     session_start();
     include("db.php");
-    // if (!isset($_SESSION['id'])) {
-
-    // }
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -63,14 +60,7 @@
                 </div>
             </div>
             <div class="header-account">
-                <div class="login" id='login'>
-                    <a href="popup.php">Вход</a>
-                </div>
-                <a href="popup.php">
-                    <button class="register" id='register'>
-                        Регистрация
-                    </button>
-                </a>
+                <?php include("account.php");?>
             </div>
         </header>
         <section class="cloud-block">
