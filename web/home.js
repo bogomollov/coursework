@@ -1,3 +1,5 @@
+const viewtarifs = document.getElementById("view-tarifs");
+
 const shared = document.getElementById("shared");
 const vps = document.getElementById("vps");
 const vds = document.getElementById("vds");
@@ -11,7 +13,7 @@ const register = document.getElementById("register");
 const tarifblock = document.getElementById("tarif");
 const tarifblock2 = document.getElementById("tarif2");
 
-var arr = [shared, vps, vds, web, cloud];
+var arr = [viewtarifs, shared, vps, vds, web, cloud];
 arr.forEach(element => {
     element.addEventListener("click", (e) => {
         tarifblock.scrollIntoView()

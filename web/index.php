@@ -69,13 +69,14 @@
                     <h1>Облачные сервера<br> от 399 ₽/мес</h1>
                 </div>
                 <div class="cloud-button">
-                    <button><a href="#">Смотреть тарифы</a></button>
+                    <button id="view-tarifs"><a>Смотреть тарифы</a></button>
                 </div>
             </div>
             <div class="cloud-img">
                 <img src="images/cloud.png">
             </div>
         </section>
+        <form action="" method="post">
         <section class="tarif-block" id="tarif">
             <div class="tarif-content">
                 <div class="tarif-title">
@@ -100,7 +101,7 @@
                                         <div>30 GB SSD</div>
                                     </div>
                                     <div class="tarif-button">
-                                        <button><a href="#">399₽/мес</a></button>
+                                        <input type="submit" name="Shared" value="399₽/мес">
                                     </div>
                                 </div>
                                 <div class="tarif-item">
@@ -110,7 +111,7 @@
                                         <div>60 GB SSD</div>
                                     </div>
                                     <div class="tarif-button">
-                                        <button><a href="#">849₽/мес</a></button>
+                                        <input type="submit" name="Shared" value="849₽/мес">
                                     </div>
                                 </div>
                                 <div class="tarif-item">
@@ -120,7 +121,7 @@
                                         <div>120 GB SSD</div>
                                     </div>
                                     <div class="tarif-button">
-                                        <button><a href="#">1799₽/мес</a></button>
+                                        <input type="submit" name="Shared" value="1799₽/мес">
                                     </div>
                                 </div>
                                 <div class="tarif-item">
@@ -130,7 +131,7 @@
                                         <div>240 GB SSD</div>
                                     </div>
                                     <div class="tarif-button">
-                                        <button><a href="#">4299₽/мес</a></button>
+                                        <input type="submit" name="Shared" value="4299₽/мес">
                                     </div>
                                 </div>
                                 <div class="tarif-item">
@@ -140,7 +141,7 @@
                                         <div>480 GB SSD</div>
                                     </div>
                                     <div class="tarif-button">
-                                        <button><a href="#">6999₽/мес</a></button>
+                                        <input type="submit" name="Shared" value="6999₽/мес">
                                     </div>
                                 </div>
                             </div>
@@ -164,7 +165,7 @@
                                         <div>30 GB SSD</div>
                                     </div>
                                     <div class="tarif-button">
-                                        <button><a href="#">549₽/мес</a></button>
+                                        <input type="submit" name="VPS" value="549₽/мес">
                                     </div>
                                 </div>
                                 <div class="tarif-item">
@@ -174,7 +175,7 @@
                                         <div>60 GB SSD</div>
                                     </div>
                                     <div class="tarif-button">
-                                        <button><a href="#">999₽/мес</a></button>
+                                        <input type="submit" name="VPS" value="999₽/мес">
                                     </div>
                                 </div>
                                 <div class="tarif-item">
@@ -184,7 +185,7 @@
                                         <div>120 GB SSD</div>
                                     </div>
                                     <div class="tarif-button">
-                                        <button><a href="#">2399₽/мес</a></button>
+                                        <input type="submit" name="VPS" value="2399₽/мес">
                                     </div>
                                 </div>
                                 <div class="tarif-item">
@@ -194,7 +195,7 @@
                                         <div>240 GB SSD</div>
                                     </div>
                                     <div class="tarif-button">
-                                        <button><a href="#">4899₽/мес</a></button>
+                                        <input type="submit" name="VPS" value="4899₽/мес">
                                     </div>
                                 </div>
                                 <div class="tarif-item">
@@ -204,8 +205,7 @@
                                         <div>480 GB SSD</div>
                                     </div>
                                     <div class="tarif-button">
-                                        <button><a href="#">7999₽/мес</a></button>
-                                    </div>
+                                        <input type="submit" name="VPS" value="7999₽/мес">                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -228,7 +228,7 @@
                                         <div>30 GB SSD</div>
                                     </div>
                                     <div class="tarif-button">
-                                        <button><a href="#">699₽/мес</a></button>
+                                        <input type="submit" name="VDS" value="699₽/мес">
                                     </div>
                                 </div>
                                 <div class="tarif-item">
@@ -238,7 +238,7 @@
                                         <div>60 GB SSD</div>
                                     </div>
                                     <div class="tarif-button">
-                                        <button><a href="#">1399₽/мес</a></button>
+                                        <input type="submit" name="VDS" value="1399₽/мес">
                                     </div>
                                 </div>
                                 <div class="tarif-item">
@@ -248,7 +248,7 @@
                                         <div>120 GB SSD</div>
                                     </div>
                                     <div class="tarif-button">
-                                        <button><a href="#">2899₽/мес</a></button>
+                                        <input type="submit" name="VDS" value="2899₽/мес">
                                     </div>
                                 </div>
                                 <div class="tarif-item">
@@ -258,7 +258,7 @@
                                         <div>240 GB SSD</div>
                                     </div>
                                     <div class="tarif-button">
-                                        <button><a href="#">5499₽/мес</a></button>
+                                        <input type="submit" name="VDS" value="5499₽/мес">
                                     </div>
                                 </div>
                                 <div class="tarif-item">
@@ -268,7 +268,7 @@
                                         <div>480 GB SSD</div>
                                     </div>
                                     <div class="tarif-button">
-                                        <button><a href="#">8999₽/мес</a></button>
+                                        <input type="submit" name="VDS" value="8999₽/мес">
                                     </div>
                                 </div>
                             </div>
@@ -294,7 +294,7 @@
                                     <div>4 Cores, 3.4-4.8 GHz</div>
                                     <div>8 GB DDR3</div>
                                     <div>2 x 480 GB HDD</div>
-                                    <button><a href="#">4940₽/мес</a></button>
+                                    <input type="submit" name="Dedicated" value="4940₽/мес">
                                 </div>
                             </div>
                             <div class="e3">
@@ -306,7 +306,7 @@
                                     <div>4 Cores, 3.7-4.1 GHz</div>
                                     <div>16 GB DDR3</div>
                                     <div>2 x 480 GB HDD</div>
-                                    <button><a href="#">6200₽/мес</a></button>
+                                    <input type="submit" name="Dedicated" value="6200₽/мес">
                                 </div>
                             </div>
                             <div class="e3">
@@ -318,7 +318,7 @@
                                     <div>6 Cores, 3.6-4.0 GHz</div>
                                     <div>32 GB DDR4</div>
                                     <div>2 x 480 GB HDD</div>
-                                    <button><a href="#">7650₽/мес</a></button>
+                                    <input type="submit" name="Dedicated" value="7650₽/мес">
                                 </div>
                             </div>
                             <div class="e3">
@@ -330,7 +330,7 @@
                                     <div>12 Cores, 2.4-3.2 GHz</div>
                                     <div>32 GB DDR4</div>
                                     <div>2 x 480 GB HDD</div>
-                                    <button><a href="#">8900₽/мес</a></button>
+                                    <input type="submit" name="Dedicated" value="8900₽/мес">
                                 </div>
                             </div>
                             <div class="e3">
@@ -342,7 +342,7 @@
                                     <div>24 Cores, 2.5-3.3 GHz</div>
                                     <div>64 GB DDR4</div>
                                     <div>2 x 1 TB SDD</div>
-                                    <button><a href="#">10700₽/мес</a></button>
+                                    <input type="submit" name="Dedicated" value="10700₽/мес">
                                 </div>
                             </div>
                         </div>
@@ -358,7 +358,7 @@
                                     <div>8 Cores, 3.6-5.0 GHz</div>
                                     <div>8 GB DDR5</div>
                                     <div>2 x 1 TB SDD</div>
-                                    <button><a href="#">11600₽/мес</a></button>
+                                    <input type="submit" name="Dedicated" value="11600₽/мес">
                                 </div>
                             </div>
                             <div class="i9">
@@ -370,7 +370,7 @@
                                     <div>8 Cores, 3.0-5.8 GHz</div>
                                     <div>16 GB DDR5</div>
                                     <div>2 x 1 TB SDD</div>
-                                    <button><a href="#">12900₽/мес</a></button>
+                                    <input type="submit" name="Dedicated" value="12900₽/мес">
                                 </div>
                             </div>
                             <div class="i9">
@@ -382,7 +382,7 @@
                                     <div>14 Cores, 3.5-5.3 GHz</div>
                                     <div>32 GB DDR5</div>
                                     <div>2 x 1 TB SDD</div>
-                                    <button><a href="#">14490₽/мес</a></button>
+                                    <input type="submit" name="Dedicated" value="14490₽/мес">
                                 </div>
                             </div>
                             <div class="i9">
@@ -394,7 +394,7 @@
                                     <div>24 Cores, 3.0-5.8 GHz</div>
                                     <div>64 GB DDR5</div>
                                     <div>2 x 1 TB SDD</div>
-                                    <button><a href="#">16490₽/мес</a></button>
+                                    <input type="submit" name="Dedicated" value="16490₽/мес">
                                 </div>
                             </div>
                             <div class="i9">
@@ -406,7 +406,7 @@
                                     <div>24 Cores, 3.2-6.0 GHz</div>
                                     <div>128 GB DDR5</div>
                                     <div>2 x 1 TB SDD</div>
-                                    <button><a href="#">19900₽/мес</a></button>
+                                    <input type="submit" name="Dedicated" value="19900₽/мес">
                                 </div>
                             </div>
                         </div>
@@ -414,6 +414,7 @@
                 </div>
             </div>
         </section>
+        </form>
         <section class="support-block">
             <div class="support-content">
                 <div class="support-title">
@@ -490,10 +491,10 @@
                     <a>Социальные сети</a>
                     <div class="footer-menu">
                         <div class="socials">
-                            <a href="#"><img src="images/vk.svg"></a>
-                            <a href="#"><img src="images/tg.svg"></a>
-                            <a href="#"><img src="images/whatsapp.svg"></a>
-                            <a href="#"><img src="images/youtube.svg"></a>
+                            <a href="vk.com"><img src="images/vk.svg"></a>
+                            <a href="telegram.org"><img src="images/tg.svg"></a>
+                            <a href="whatsapp.com"><img src="images/whatsapp.svg"></a>
+                            <a href="youtube.com"><img src="images/youtube.svg"></a>
                         </div>
                     </div>
                 </div>

@@ -34,6 +34,18 @@ button, input[type=submit] {
     border-radius: 5px;
     padding: 11px 15px;
 }
+.tarif-button input[type=submit] {
+    width: 121.75px;
+    background-color: var(--dark-gray);
+    color: var(--white);
+    font-size: var(--p);
+}
+.tarif-dedicated input[type=submit] {
+    background-color: var(--dark-gray);
+    color: var(--white);
+    font-size: var(--p);
+    margin-top: 40px;
+}
 button a, input[type=submit] {
     font-weight: var(--bold);
 }
@@ -116,6 +128,13 @@ header {
 }
 #account {
     margin-right: 45px;
+}
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    width: inherit;
 }
 .cloud-block, .tarif-block, .dedicated-block, .support-block {
     display: flex;
@@ -200,6 +219,7 @@ header {
 }
 .tarif-button button{
     background-color: var(--dark-gray);
+    width: 121.75px;
 }
 .xeon-title, .intel-title, .support-description {
     gap:40px;
