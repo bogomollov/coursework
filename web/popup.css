@@ -1,4 +1,4 @@
-#popup, #payment {
+#popup, #payment, #orders {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -21,6 +21,27 @@
     justify-content: space-between;
     border-radius: 5px;
     gap: 100px;
+}
+.orders-table {
+    display: flex;
+    gap: 16px;
+}
+.orders-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--white);
+    justify-content: space-between;
+    border-radius: 5px;
+    gap: 16px;
+}
+.orders-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
 .payment-content {
     display: flex;
