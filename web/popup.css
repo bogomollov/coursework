@@ -1,4 +1,4 @@
-#popup {
+#popup, #payment {
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -21,6 +21,17 @@
     justify-content: space-between;
     border-radius: 5px;
     gap: 100px;
+}
+.payment-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+.payment-content h3, input[name="tarif"] {
+    font-weight: 600;
 }
 .login-content {
     display: flex;
@@ -50,11 +61,19 @@ input {
 .password {
     margin-bottom: 30px;
 }
-.username input, .password input {
+.username input, .password input, input[type="email"] {
     border: 2px solid var(--black);
     border-radius: 5px;
     padding: 11px 15px;
     font-size: var(--p);
+}
+input[type="email"] {
+    margin-bottom: 30px;
+    width: 330px;
+}
+input[name="tarif"] {
+    color: var(--black);
+    font-size: var(--h3);
 }
 input[type=submit] {
     background-color: var(--dark-gray);

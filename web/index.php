@@ -76,7 +76,7 @@
                 <img src="images/cloud.png">
             </div>
         </section>
-        <form action="" method="post">
+        <form action="payment.php" method="post">
         <section class="tarif-block" id="tarif">
             <div class="tarif-content">
                 <div class="tarif-title">

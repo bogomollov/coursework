@@ -35,7 +35,7 @@ button, input[type=submit] {
     padding: 11px 15px;
 }
 .tarif-button input[type=submit] {
-    width: 121.75px;
+    width: 126px;
     background-color: var(--dark-gray);
     color: var(--white);
     font-size: var(--p);
@@ -131,7 +131,7 @@ header {
 }
 form {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-direction: column;
     width: inherit;

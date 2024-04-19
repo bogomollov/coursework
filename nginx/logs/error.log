@@ -1167,3 +1167,4 @@
 2023/11/26 12:35:09 [error] 29#29: *31 open() "/usr/share/nginx/html404" failed (2: No such file or directory), client: 192.168.160.1, server: , request: "GET /in.php HTTP/1.1", host: "localhost"
 2024/04/09 06:15:49 [emerg] 29#29: no "events" section in configuration
 2024/04/09 06:16:20 [emerg] 1#1: no "events" section in configuration
+2024/04/19 08:21:20 [error] 22#22: *234 open() "/usr/share/nginx/html404" failed (2: No such file or directory), client: 172.19.0.1, server: , request: "GET /admin.php HTTP/1.1", host: "localhost", referrer: "http://localhost/popup.php"
