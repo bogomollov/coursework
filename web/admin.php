@@ -27,11 +27,20 @@
         <div class="orders-table">
             <div class="orders-info">
                 <a>ID заявки</a>
-                <?php echo $id;?>
+                <a><?php echo $id;?></a>
             </div>
+            <div class="orders-info">
                 <a>ID клиента</a>
+                <a><?php echo $client;?></a>
+            </div>
+            <div class="orders-info">
                 <a>E-mail клиента</a>
+                <a href="mailto:<?php echo $email?>"><?php echo $email?></a>
+            </div>  
+            <div class="orders-info">
                 <a>Тариф</a>
+                <a><?php echo $tarif;?></a>
+            </div>
         </div>
     </div>
 </div>
