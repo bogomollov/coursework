@@ -64,7 +64,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 30px auto 60px;
+    margin: 20px auto 60px;
 }
 header {
     display: flex;
@@ -136,11 +136,11 @@ form {
     flex-direction: column;
     width: inherit;
 }
-.cloud-block, .tarif-block, .dedicated-block, .support-block {
+.cloud-block, .dedicated-block, .support-block {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: inherit;
+    width: 100%;
 }
 .cloud-title, .tarif-title, .dedicated-title, .support-title {
     margin-bottom: 50px;
@@ -229,7 +229,7 @@ form {
 }
 footer {
     display: flex;
-    width: inherit;
+    width: 100%;
 }
 .footer-list {
     display: flex;
@@ -250,4 +250,38 @@ footer {
 .socials {
     display: flex;
     gap: 16px;
+}
+@media (min-width: 1200px) {
+    :root {
+       --vertical-gap: 105px;
+    }
+    .body-wrapper {
+        width: calc(100% - 2%);
+    }
+    .header-menu {
+        max-width: 900px;
+    }
+    .cloud-img {
+        display: flex;
+        justify-content: end;
+        width: 50%;
+    }
+    .tarif-prices {
+        width: 400px;
+    }
+    .tarif-block {
+        width: 100%;
+    }
+    a, a:link, p, .tarif-button input[type="submit"], .tarif-dedicated input[type="submit"] {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 20px;
+    }
 }
